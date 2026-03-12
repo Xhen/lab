@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: nginx-monke
+  name: nginx-monke
+spec:
+  containers:
+  - image: nginx
+    name: nginx-monke
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
